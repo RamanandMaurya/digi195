@@ -1,0 +1,310 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Digi195.MasterPage" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9RN1XK1SJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N9RN1XK1SJ');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PB4RZGR');</script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Digi195-Grow Digi India Limited",
+          "alternateName": "Grow Digi India",
+          "url": "https://digi195.com/",
+          "logo": "https://digi195.com/assets/images/logo.svg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "092895 47282",
+            "contactType": "sales",
+            "contactOption": "HearingImpairedSupported",
+            "areaServed": "IN",
+            "availableLanguage": ["en","Hindi"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/digi195india",
+            "https://twitter.com/digi195india",
+            "https://www.instagram.com/digi195india/",
+            "https://www.youtube.com/@growdigiindia",
+            "https://www.linkedin.com/company/digi195/",
+            "https://in.pinterest.com/digi195india/",
+            "https://digi195.com/"
+          ]
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title><%: Page.Title %></title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/apple-favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sweetalert2.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body-overlay">
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB4RZGR"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form id="form1" runat="server">
+        <div class="main-wrapper">
+            <!--Top Header Section-->
+            <div class="topHeader">
+                <div class="container">
+                    <div class="row wow fadeIn">
+                        <div class="col-md-8">
+                            <div class="left-section">
+                                <div>
+                                    <span>Covid-19 Update: </span>Our entire team is now working in-office. We expect no
+                                disruptions in our services.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="right-section">
+                                <div class="Number1">
+                                    <a href="tel:+919289547282">
+                                        <img src="assets/images/icon/phone.svg" width="20" height="20" alt="phone">
+                                        <span>+91 928 954 7282</span></a>
+                                </div>
+                                <div class="gmail1">
+                                    <a href="mailto:info@digi195.com">
+                                        <img width="20" height="20" src="assets/images/icon/message.svg" alt="email">
+                                        <span>info@digi195.com</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--main Header Section-->
+            <header class="main-header">
+                <div class="container">
+                    <nav class="nav-section">
+                        <div class="nav-content">
+                            <div class="logo-sec wow fadeIn">
+                                <a href="/" target="_self">
+                                    <img src="assets/images/logo.svg" width="195" height="61" alt="Blockchain Product Development Company">
+                                </a>
+                                <div class="triggerBtn">
+                                    <div class="trigger1">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-list wow fadeIn">
+                                <%--<div class="logo-sec1">
+                                    <a href="/" target="_self">
+                                        <div class="images1">
+                                            <img src="assets/images/logo.svg" alt="logo" width="140" height="44">
+                                        </div>
+                                    </a>
+                                    <span class="times1"><i class="fa"></i></span>
+                                </div>--%>
+                                <ul class="main-nav">
+                                    <li class="top-level-link">
+                                        <a href="/"><span>Home</span></a>
+                                    </li>
+                                    <li class="top-level-link">
+                                        <a href="products"><span>Product</span></a>
+                                    </li>
+                                    <li class="top-level-link service-hover">
+                                        <a href="javascript:void(0);" class="mega-menu"><span>Services</span></a>
+                                        <div class="sub-menu-block">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-12">
+                                                    <a href="blockchain-based-product-development" class="mega-menu">
+                                                        <h2 class="sub-menu-head"><span>Blockchain Based Product Development</span></h2>
+                                                    </a>
+                                                    <ul class="sub-menu-lists">
+                                                        <li><a href="blockchain-based-industry-solution">Blockchain Based Industry Solution</a></li>
+                                                        <li><a href="cryptocurrency-exchange-software-development-company">Crypto Exchange Development</a></li>
+                                                        <li><a href="dapp-development-services">DApps Development</a></li>
+                                                        <li><a href="smart-contract-development">Smart Contract Development</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-12">
+                                                    <a href="nft-development-services">
+                                                        <h2 class="sub-menu-head">NFT Development</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 single1">
+                                                    <a href="management-consulting-services">
+                                                        <h2 class="sub-menu-head consulting">Management Consulting Services</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="top-level-link">
+                                        <a href="our-partners"><span>Our Partners</span></a>
+                                    </li>
+                                    <li class="top-level-link">
+                                        <a href="about-digi195-grow-digi-india-limited"><span>About us</span></a>
+                                    </li>
+                                    <li class="top-level-link">
+                                        <a href="contact"><span>Contact us</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <%--<div class="sidebar-overlay"></div>--%>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="inner-content-overlay">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--Footer section-->
+            <span class="footerImg1">
+                <img src="assets/images/footer-web.svg" width="1280" height="193" alt="footer-web">
+            </span>
+            <div class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-left-side">
+                                <div class="footer-logo wow fadeIn" data-wow-delay="0s">
+                                    <h5 class="footerText"><span>Grow Digi</span> India Ltd.</h5>
+                                </div>
+                                <div class="footer-address wow fadeIn" data-wow-delay=".1s">
+                                    <p>
+                                        B-6, Amaltash Marg,<br /> Block B, Sector 4, Noida,<br /> Uttar Pradesh 201301
+                                    </p>
+                                </div>
+                                <div class="footer-phone wow fadeIn" data-wow-delay=".2s">
+                                    <a href="tel:+919289547282">
+                                        <p>+91 928 954 7282</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 footermenu1">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="footer-middle-side">
+                                        <div class="footer-middle-menu">
+                                            <ul class="first-menu wow fadeIn" data-wow-delay=".3s">
+                                                <li>
+                                                    <div class="footer-middle-head">
+                                                        <h6>Company</h6>
+                                                    </div>
+                                                </li>
+                                                <li><a href="about-digi195-grow-digi-india-limited">About Us</a></li>
+                                                <li><a href="blog">Blog</a></li>
+                                                <li><a href="contact">Get In Touch</a></li>
+                                                <li><a href="life-at-grow-digi-india">Life @ Grow Digi</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="footer-center">
+                                        <ul class="second-menu wow fadeIn" data-wow-delay=".4s">
+                                            <li>
+                                                <div class="footer-middle-head">
+                                                    <h6>Services</h6>
+                                                </div>
+                                            </li>
+                                            <li><a href="blockchain-based-product-development">Blockchain Based Product Development</a></li>
+                                            <li><a href="nft-development-services">NFT Development</a></li>
+                                            <li><a href="/#servicesAll">View all</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="footer-right-side">
+                                        <ul class="right-menu wow fadeIn" data-wow-delay=".5s">
+                                            <li>
+                                                <div class="footer-right-head">
+                                                    <h6>RESOURCES</h6>
+                                                </div>
+                                            </li>
+                                            <li><a href="career">Career</a></li>
+                                            <li><a href="news">News</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer-copy">
+                        <div class="col-md-5">
+                            <div class="footer-social-icon wow fadeIn" data-wow-delay=".6s">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/digi195india" target="_blank">
+                                        <img width="24" height="24" alt="social_icons" src="assets/images/icon/facebook.svg"></a></li>
+                                    <li><a href="https://twitter.com/digi195india" target="_blank">
+                                        <img width="24" height="24" alt="social_icons" src="assets/images/icon/twitter.svg"></a></li>
+                                    <li><a href="https://www.instagram.com/digi195india/" target="_blank">
+                                        <img width="24" height="24" alt="social_icons" src="assets/images/icon/instagram.svg"></a></li>
+                                    <li><a href="https://www.linkedin.com/company/digi195/" target="_blank">
+                                        <img width="24" height="24" alt="social_icons" src="assets/images/icon/linkedin.svg"></a></li>
+                                    <li><a href="https://www.youtube.com/@growdigiindia" target="_blank">
+                                        <img width="24" height="24" alt="social_icons" src="assets/images/icon/youtube.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="copy-right wow fadeIn">
+                                <p>© <%: DateTime.Now.Year %> <span>Grow Digi India</span>. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/sweetalert2.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/63b6ca1a47425128790bd3a0/1gm10au8a';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </form>
+</body>
+</html>
