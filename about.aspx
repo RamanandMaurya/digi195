@@ -458,7 +458,7 @@ Senior-level Technology Management Executive with record of strategically leadin
     </div>
 
 
-    <div class="leaderSection">
+    <%--<div class="leaderSection">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -705,5 +705,5 @@ Senior-level Technology Management Executive with record of strategically leadin
                 </div>
             </div>
         </div>
-    </div>
+    </div>--%>
 </asp:Content>
